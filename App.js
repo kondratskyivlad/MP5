@@ -9,6 +9,7 @@ import Profile from "./components/profile";
 import Movie from "./components/movie";
 import Info from "./components/info";
 import AddForm from "./components/addForm";
+import Images from "./components/images";
 
 const MyTheme = {
     dark: false,
@@ -113,6 +114,22 @@ const App = () => {
                         ),
                     }}
                     component={movieStackScreen}
+                />
+                <Tab.Screen
+                    name='Images'
+                    options={{
+                        tabBarLabel: 'Images',
+                        tabBarIcon: () => (
+                            <View>
+                                <Icon
+                                    style={[{color: '#F9F3E7'}]}
+                                    size={25}
+                                    name={'file-image-o'}
+                                />
+                            </View>
+                        ),
+                    }}
+                    component={Images}
                 />
             </Tab.Navigator>
         </NavigationContainer>

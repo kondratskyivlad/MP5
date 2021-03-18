@@ -1,7 +1,8 @@
 import React from 'react';
 import {StyleSheet, View, Dimensions,
     Image, Text,
-    ScrollView, TouchableNativeFeedback
+    ScrollView,
+    TouchableNativeFeedback
 } from 'react-native';
 import MoviesList from '../MoviesList.json'
 import {Card} from 'react-native-elements'
@@ -121,6 +122,18 @@ const MyTheme = {
         notification: 'rgb(255, 69, 58)',
     },
 };
+
+// imageContainerStyle={
+//     image.idx === 0 ?
+//         {
+//             width: dim.width / 4,
+//             height: dim.height / 6.5,
+//         } :
+//         {
+//             width: dim.width / 4,
+//             height: dim.height / 6.5,
+//         }
+// }
 
 let data = [];
 
